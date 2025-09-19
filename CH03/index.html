@@ -142,13 +142,19 @@
                 </tbody>
         </table>
 
-    <!-- 미디어 태그 -->
+      <!-- 미디어 태그 -->
     <!-- IMG, AUDIO, VIDEO 태그-->
         <br>
         <img src="../CH03/MEDIA/Penguins.jpg" alt = "이미지", width="500">
         <br>
-        <audio src="../CH03/MEDIA/Kalimba.mp3" controls="controls"></audio>
+        <audio controls="controls">
+            <source src="../CH03/MEDIA/Kalimba.mp3" type="audio/mp3">
+            <source src="../CH03/MEDIA/Kalimba.ogg" type="audio/ogg">
+        </audio>
         <br>
-        <video src="../CH03/MEDIA/Wildlife.mp4" controls= "controls"></video>
+        <video controls="controls" poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfYhwOr00Z3c04CLBIC7d3XsmuM26_88bnRg&s" width = "800" height = "500">
+            <source src="../CH03/MEDIA/Wildlife.mp4" type="video/mp4">
+            <source src="../CH03/MEDIA/Wildlife.webm" type="video/webm">
+        </video>
     </body>
 </html>
