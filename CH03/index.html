@@ -1,149 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>챕터 3</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>챕터 3</title>
+    </head>
 
-    <!-- 2장 복습--> 
-    <h1>3장</h1>
-    <p>&ltHTML 기본태그&gt;</p>
+    <body>
+        <!-- 2장 복습--> 
+        <h1>3장</h1>
+        <p>&ltHTML 기본태그&gt;</p>
 
-    <!-- 글자 태그 -->
-    <!-- 1. 앵커 태그-->
-    <!-- 1-1. 하이퍼 링크 설정 / 특정 웹 페이지에 연결-->
-    <a href="https://naver.com" >네이버</a><br>
-    <a href="https://google.com">구글</a><br>
-    <a href="https://www.daum.net/">다음</a><br><br>
+        <!-- 글자 태그 -->
+        <!-- 1. 앵커 태그-->
+        <!-- 1-1. 하이퍼 링크 설정 / 특정 웹 페이지에 연결-->
+        <a href="https://naver.com" >네이버</a><br>
+        <a href="https://google.com">구글</a><br>
+        <a href="https://www.daum.net/">다음</a><br><br>
 
-    <!-- 1-2. 웹 페이지 내부에 연결하기-->
-    <!--id 속성이 중복되면 가장 먼저 나오는 태그로 이동함-->
-    <!--빈 링크를 만들때도 아예 공백이 아니라 #을 넣는다.-->
-    <a href="#table">표로 이동하기</a>
+        <!-- 1-2. 웹 페이지 내부에 연결하기-->
+        <!--id 속성이 중복되면 가장 먼저 나오는 태그로 이동함-->
+        <!--빈 링크를 만들때도 아예 공백이 아니라 #을 넣는다.-->
+        <a href="#table">표로 이동하기</a>
 
-    <!-- 2. 글자 모양 태그-->
-    <!-- 글자 모양 태그는 단독 사용 가능하지만 잘 사용안함-->
-    <p><b>강조</b></p>
-    <p><i>기울어진 글자</i></p>
-    <p><small>작은 글자</small></p>
-    <p>글자<sub>아래 첨자</sub></p>
-    <p>글자<sup>위 첨자</sup></p>
-    <p><ins>밑줄</ins></p>
-    <p><del>취소선</del></p>
+        <!-- 2. 글자 모양 태그-->
+        <!-- 글자 모양 태그는 단독 사용 가능하지만 잘 사용안함-->
+        <p><b>강조</b></p>
+        <p><i>기울어진 글자</i></p>
+        <p><small>작은 글자</small></p>
+        <p>글자<sub>아래 첨자</sub></p>
+        <p>글자<sup>위 첨자</sup></p>
+        <p><ins>밑줄</ins></p>
+        <p><del>취소선</del></p>
 
-    <!-- 목록 태그 -->
-    <!-- 1. ul,ol,li 태그, 중첩도 가능 -->
-    <ul>
-        <li>사과</li>
-        <li>바나나</li>
-        <li>오렌지</li>
+        <!-- 목록 태그 -->
+        <!-- 1. ul,ol,li 태그, 중첩도 가능 -->
         <ul>
             <li>사과</li>
             <li>바나나</li>
             <li>오렌지</li>
+            <ul>
+                <li>사과</li>
+                <li>바나나</li>
+                <li>오렌지</li>
+            </ul>
         </ul>
-    </ul>
 
-    <ol type="a" start="2">
-        <li>사과</li>
-        <li>바나나</li>
-        <li>오렌지</li>
-    </ol>
+        <ol type="a" start="2">
+            <li>사과</li>
+            <li>바나나</li>
+            <li>오렌지</li>
+        </ol>
 
-    <!-- 2. 테이블 태그 -->
-    <!-- table, tr, th,td -->
-    <table id="table" border="1">
-        <tr>
-            <th>강조, 1행 1열</th>
-            <td>일반, 1행 2열</td>
-        </tr>
-        <tr>
-            <th>강조, 2행 1열</th>
-            <td>일반, 2행 2열</td>
-        </tr>
-    </table>
+        <!-- 2. 테이블 태그 -->
+        <!-- table, tr, th,td -->
+        <table id="table" border="1">
+            <tr>
+                <th>강조, 1행 1열</th>
+                <td>일반, 1행 2열</td>
+            </tr>
+            <tr>
+                <th>강조, 2행 1열</th>
+                <td>일반, 2행 2열</td>
+            </tr>
+        </table>
 
-<!-- caption, thead,tfoot,tbody -->
-<!-- border,colspan,rowspan -->
+    <!-- caption, thead,tfoot,tbody -->
+    <!-- border,colspan,rowspan -->
 
-<!-- border: 표의 테두리 굵기-->
-<!-- th,td : colspan: 셀의 너비 지정-->
-<!-- th,td : rowspan: 셀의 높이 지정-->
+    <!-- border: 표의 테두리 굵기-->
+    <!-- th,td : colspan: 셀의 너비 지정-->
+    <!-- th,td : rowspan: 셀의 높이 지정-->
 
-    <br>
-    <table border="5">
-        <caption>시간표</caption>
-        <thead>
-            <tr>
-                <th> </th>
-                <th>월</th>
-                <th>화</th>
-                <th>수</th>
-                <th>목</th>
-                <th>금</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1교시</td>
-                <td>영어</td>
-                <td colspan="2">국어 연강</td>
-                <td>과학</td>
-                <td rowspan="2">동아리</td>
+        <br>
+        <table border="5">
+            <caption>시간표</caption>
+            <thead>
+                <tr>
+                    <th> </th>
+                    <th>월</th>
+                    <th>화</th>
+                    <th>수</th>
+                    <th>목</th>
+                    <th>금</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1교시</td>
+                    <td>영어</td>
+                    <td colspan="2">국어 연강</td>
+                    <td>과학</td>
+                    <td rowspan="2">동아리</td>
 
-            </tr>
-            <tr>
-                <td>2교시</td>
-                <td>도덕</td>
-                <td>체육</td>
-                <td>영어</td>
-                <td>수학</td>
-            </tr>
-        </tbody>
-    </table>
-
-<!-- 연습 -->
-    <br>
-    <table border="5">
-        <caption>홍차</caption>
-        <thead>
-            <tr>
-                <td colspan="2">지역별 홍차</td>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="3">중국</td>
-                <td>정산소종</td>
-            </tr>
-            <tr>
-                <td>기문</td>
-            </tr>
-            <tr>
-                <td>운남</td>
-            </tr>
-            <tr>
-                <td rowspan="5">인도 및 스리랑카</td>
-            </tr>
-            <tr>
-                <td>아삼</td>
-            </tr>
-            <tr>
-                <td>실론</td>
-            </tr>
-            <tr>
-                <td>디질링</td>
-            </tr>
-            <tr>
-                <td>닐기리</td>
-            </tr>
+                </tr>
+                <tr>
+                    <td>2교시</td>
+                    <td>도덕</td>
+                    <td>체육</td>
+                    <td>영어</td>
+                    <td>수학</td>
+                </tr>
             </tbody>
-    </table>
+        </table>
 
-<!-- 미디어 태그 -->
-<!-- IMG, AUDIO, VIDEO 태그-->
-<br>
-<img src="../CH03/MEDIA/Penguins.jpg" alt = "이미지", width="500">
-</body>
+    <!-- 연습 -->
+        <br>
+        <table border="5">
+            <caption>홍차</caption>
+            <thead>
+                <tr>
+                    <td colspan="2">지역별 홍차</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">중국</td>
+                    <td>정산소종</td>
+                </tr>
+                <tr>
+                    <td>기문</td>
+                </tr>
+                <tr>
+                    <td>운남</td>
+                </tr>
+                <tr>
+                    <td rowspan="5">인도 및 스리랑카</td>
+                </tr>
+                <tr>
+                    <td>아삼</td>
+                </tr>
+                <tr>
+                    <td>실론</td>
+                </tr>
+                <tr>
+                    <td>디질링</td>
+                </tr>
+                <tr>
+                    <td>닐기리</td>
+                </tr>
+                </tbody>
+        </table>
+
+    <!-- 미디어 태그 -->
+    <!-- IMG, AUDIO, VIDEO 태그-->
+        <br>
+        <img src="../CH03/MEDIA/Penguins.jpg" alt = "이미지", width="500">
+        <br>
+        <audio src="../CH03/MEDIA/Kalimba.mp3" controls="controls"></audio>
+        <br>
+        <video src="../CH03/MEDIA/Wildlife.mp4" controls= "controls"></video>
+    </body>
 </html>
